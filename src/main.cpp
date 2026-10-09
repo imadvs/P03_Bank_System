@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/Login/clsLoginScreen.h"
+#include "Screens/Login/clsLoginScreen.h"
 
 int main()
 {

@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include "../Core/clsScreen.h"
-#include "../Core/clsInputValidate.h"
+#include "Screens/clsScreen.h"
+#include "Lib/clsInputValidate.h"
 #include <iomanip>
 #include "clsDepositScreen.h"
 #include "clsWithdrawScreen.h"

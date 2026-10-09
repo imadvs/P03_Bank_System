@@ -8,11 +8,11 @@
 #pragma once
 
 #include <iostream>
-#include "../Core/clsScreen.h"
-#include "../Users/clsUser.h"
+#include "Screens/clsScreen.h"
+#include "Core/clsUser.h"
 #include <iomanip>
 #include "../clsMainScreen.h"
-#include "../Core/Global.h"
+#include "Global.h"
 
 class clsLoginScreen :protected clsScreen
 {

@@ -13,9 +13,13 @@ add_executable(ATMSystem
     src/main.cpp
     ${SOURCES}
         include/Lib/clsString.h
+        include/InterfaceCommunication.h
 )
 
 target_compile_definitions(ATMSystem PRIVATE
-    CLIENTS_FILE_PATH="${CMAKE_SOURCE_DIR}/data/Client.txt"
-    USERS_FILE_PATH="${CMAKE_SOURCE_DIR}/data/User.txt"
+    CLIENTS_FILE_PATH="${CMAKE_SOURCE_DIR}/data/Clients.txt"
+    USERS_FILE_PATH="${CMAKE_SOURCE_DIR}/data/Users.txt"
+    CURRENCIES_FILE_PATH="${CMAKE_SOURCE_DIR}/data/Currencies.txt"
+    LOGIN_REGISTER_FILE_PATH="${CMAKE_SOURCE_DIR}/data/LoginRegister.txt"
+    TRANSFER_LOG_FILE_PATH="${CMAKE_SOURCE_DIR}/data/TransferLog.txt"
 )

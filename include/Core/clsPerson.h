@@ -9,7 +9,7 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include "../InterfaceCommunication.h"
+#include "InterfaceCommunication.h"
 
 using namespace std;
 

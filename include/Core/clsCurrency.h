@@ -12,6 +12,10 @@
 #include <vector>
 #include <fstream>
 
+#ifndef CURRENCIES_FILE_PATH
+#define CURRENCIES_FILE_PATH "data/Currencies.txt"
+#endif
+
 class clsCurrency
 {
 private:
@@ -48,7 +52,7 @@ private:
         vector<clsCurrency> vCurrencys;
 
         fstream MyFile;
-        MyFile.open("Currencies.txt", ios::in); //read Mode
+        MyFile.open(CURRENCIES_FILE_PATH, ios::in); //read Mode
 
         if (MyFile.is_open())
         {
@@ -67,7 +71,7 @@ private:
     static void _SaveCurrencyDataToFile(vector<clsCurrency> vCurrencys)
     {
         fstream MyFile;
-        MyFile.open("Currencies.txt", ios::out); //overwrite
+        MyFile.open(CURRENCIES_FILE_PATH, ios::out); //overwrite
 
         string DataLine;
 
@@ -154,7 +158,7 @@ public:
         CurrencyCode = clsString::upperallstring(CurrencyCode);
 
         fstream MyFile;
-        MyFile.open("Currencies.txt", ios::in); //read Mode
+        MyFile.open(CURRENCIES_FILE_PATH, ios::in); //read Mode
 
         if (MyFile.is_open())
         {
@@ -179,7 +183,7 @@ public:
         Country = clsString::upperallstring(Country);
 
         fstream MyFile;
-        MyFile.open("Currencies.txt", ios::in); //read Mode
+        MyFile.open(CURRENCIES_FILE_PATH, ios::in); //read Mode
 
         if (MyFile.is_open())
         {

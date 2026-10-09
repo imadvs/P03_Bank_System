@@ -7,10 +7,10 @@
 
 #pragma once
 #include <iostream>
-#include "../Core/clsScreen.h"
+#include "Screens/clsScreen.h"
 #include "../../Core/clsBankClient.h"
 #include <iomanip>
-#include "../Core/clsUtil.h"
+#include "Lib/clsUtil.h"
 
 class clsTotalBalancesScreen : protected clsScreen
 {

@@ -9,7 +9,11 @@
 #include "../Lib/clsDate.h"
 
 #ifndef CLIENTS_FILE_PATH
-#define CLIENTS_FILE_PATH "data/Client.txt"
+#define CLIENTS_FILE_PATH "data/Clients.txt"
+#endif
+
+#ifndef TRANSFER_LOG_FILE_PATH
+#define TRANSFER_LOG_FILE_PATH "data/TransferLog.txt"
 #endif
 
 using namespace std;
@@ -146,7 +150,7 @@ private:
         string stDataLine = _PrepareTransferLogRecord( Amount,  DestinationClient,  UserName);
 
         fstream MyFile;
-        MyFile.open("TransferLog.txt", ios::out | ios::app);
+        MyFile.open(TRANSFER_LOG_FILE_PATH, ios::out | ios::app);
 
         if (MyFile.is_open())
         {
@@ -391,7 +395,7 @@ public:
         vector <stTrnsferLogRecord> vTransferLogRecord;
 
         fstream MyFile;
-        MyFile.open("TransferLog.txt", ios::in);//read Mode
+        MyFile.open(TRANSFER_LOG_FILE_PATH, ios::in);//read Mode
 
         if (MyFile.is_open())
         {

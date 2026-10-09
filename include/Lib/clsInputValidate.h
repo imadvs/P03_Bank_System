@@ -1,6 +1,6 @@
 #ifndef PROJECT1L4BANKEXTENSION2_CLSINPUTVALIDATE_H
 #define PROJECT1L4BANKEXTENSION2_CLSINPUTVALIDATE_H
-#include "../Core/clsDate.h"
+#include "Lib/clsDate.h"
 #include <limits>
 
 using namespace std;

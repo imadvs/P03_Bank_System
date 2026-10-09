@@ -7,10 +7,10 @@
 
 #pragma once
 #include <iostream>
-#include "../Core/clsScreen.h"
-#include "../Core/clsPerson.h"
+#include "Screens/clsScreen.h"
+#include "Core/clsPerson.h"
 #include "../../Core/clsUser.h"
-#include "../Core/clsInputValidate.h"
+#include "Lib/clsInputValidate.h"
 
 class clsFindUserScreen :protected clsScreen
 {

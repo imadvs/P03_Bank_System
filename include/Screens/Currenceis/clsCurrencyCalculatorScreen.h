@@ -7,9 +7,9 @@
 
 #pragma once
 #include <iostream>
-#include "../Core/clsScreen.h"
+#include "Screens/clsScreen.h"
 #include "../../Core/clsCurrency.h"
-#include "../Core/clsInputValidate.h"
+#include "Lib/clsInputValidate.h"
 
 class clsCurrencyCalculatorScreen : protected clsScreen {
 private:

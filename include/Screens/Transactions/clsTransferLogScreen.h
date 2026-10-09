@@ -6,7 +6,7 @@
 #define PROJECT1_L4_BANKEXTENSION2_CLSTRANSFERREGISTERSCREEN
 
 #include <iostream>
-#include "../Core/clsScreen.h"
+#include "Screens/clsScreen.h"
 #include <iomanip>
 #include <fstream>
 #include "../../Core/clsBankClient.h"

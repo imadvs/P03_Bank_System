@@ -7,7 +7,7 @@
 
 
 #pragma once
-#include "../Core/clsDate.h"
+#include "Lib/clsDate.h"
 
 class clsPeriod {
 public:

@@ -2,9 +2,9 @@
 #include <cstdlib>
 #include <iostream>
 #include <limits>
-#include "../Users/clsUser.h"
+#include "Core/clsUser.h"
 #include "../Global.h"
-#include "../Core/clsDate.h"
+#include "Lib/clsDate.h"
 
 using namespace std;
 

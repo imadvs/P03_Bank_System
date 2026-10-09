@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include "../Core/clsPerson.h"
-#include "../Core/clsString.h"
+#include "Lib/clsString.h"
 #include <vector>
 #include <fstream>
 #include "../Lib/clsDate.h"
@@ -10,7 +10,11 @@
 
 
 #ifndef USERS_FILE_PATH
-#define USERS_FILE_PATH "data/User.txt"
+#define USERS_FILE_PATH "data/Users.txt"
+#endif
+
+#ifndef LOGIN_REGISTER_FILE_PATH
+#define LOGIN_REGISTER_FILE_PATH "data/LoginRegister.txt"
 #endif
 
 using namespace std;
@@ -335,7 +339,7 @@ public:
         string stDataLine = _PrepareLogInRecord();
 
         fstream MyFile;
-        MyFile.open("LoginRegister.txt", ios::out | ios::app);
+        MyFile.open(LOGIN_REGISTER_FILE_PATH, ios::out | ios::app);
         if (MyFile.is_open())
         {
             MyFile << stDataLine << endl;
@@ -369,7 +373,7 @@ public:
         vector <stLoginRegisterRecord> vLoginRegisterRecord;
 
         fstream MyFile;
-        MyFile.open("LoginRegister.txt", ios::in);//read Mode
+        MyFile.open(LOGIN_REGISTER_FILE_PATH, ios::in);//read Mode
 
         if (MyFile.is_open())
         {
